@@ -42,7 +42,7 @@ h1{
 }
 
 #web-title-input, #web-url-input{
-  width:300px;
+  width:90%;
   display: block;
   font-size: 26px;
   margin: 20px auto;
@@ -50,7 +50,7 @@ h1{
   border:1px solid grey;
 }
 #enter-button{
-  width:300px;
+  width:90%;
   display: block;
   font-size: 20px;
   margin: 20px auto;
