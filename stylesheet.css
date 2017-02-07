@@ -6,11 +6,11 @@ body {
   background-color: black;
   overflow: auto;
   margin: 0px auto;
-  height: 700px;
+  height: 100vh;
 }
 
 main {
-  position: relative;;
+  position: relative;
   height: 50%;
   background-color: #455A64;
 }
@@ -19,14 +19,16 @@ section {
   padding: 15px;
   margin: 0px auto 10px;
   background-color: #CFD8DC;
-  height: 100%%;
+  height: 100%;
 }
+
 h1{
-  font-family: open-sans;
+  font-family: 'Open Sans', sans-serif;
   weight:800;
   padding: 25px;
   width:300px;
   margin:0px auto;
+  display: block;
 }
 #title {
   color: #FFFFFF;
@@ -42,7 +44,7 @@ h1{
 }
 
 #web-title-input, #web-url-input{
-  width:300px;
+  width: 90%;
   display: block;
   font-size: 26px;
   margin: 20px auto;
@@ -50,12 +52,12 @@ h1{
   border:1px solid grey;
 }
 #enter-button{
-  width:300px;
+  width: 90%;
   display: block;
   font-size: 20px;
   margin: 20px auto;
   padding:10px;
-  border-size:0px;
+  border-width: 1px;
 }
 
 article{
@@ -70,20 +72,24 @@ article{
 #web-title{
   border-bottom: #455A64 1px solid;
 }
+
 #web-url{
   border-bottom: #455A64 1px solid;
   display: block;
   color:#607D8B
 }
+
 #web-url:hover{
   border-bottom: #F2F4F4 1px solid
 }
+
 #read-button{
   display: block;
   float: left;
   position: relative;
   top: 10px;
 }
+
 #delete-button{
   display: block;
   float:right;
@@ -91,8 +97,7 @@ article{
   top: 10px;
 }
 
-@media (min-width:630px)
-{
+@media (min-width:730px) {
   h1{
     width:100%
   }
@@ -120,6 +125,7 @@ article{
   #title{
     font-size: 46px;
     text-align: center;
+    width: 90%;
     padding:0px;
   }
 
