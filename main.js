@@ -2,6 +2,11 @@ var $webTitleInput = $('#web-title-input');
 var $webUrlInput = $('#web-url-input');
 var $enterButton = $('#enter-button');
 var $list = $('#list')
+
+
+var $readButton = $('#read-button');
+var $deleteButton = $('#delete-button-button');
+
 var $readButton = $('#read-button');
 var $deleteButton = $('#delete-button-button');
 
@@ -12,5 +17,21 @@ $list.prepend('<article><p id="web-title">'+$webTitleInput.val()+'</p>'+
 '<button id="delete-button">Delete</button>'
 +'</article>')})
 
-$('#read-button-button').on('click'),function(){
-}
+
+
+//remove a card when delete button is clicked
+$('#delete-button').on('click', function() {
+  this.parentNode.removeChild($('.card'))
+  // $('.card').remove();
+  console.log('pants');
+})
+
+//change the class of the read button on click
+$('#read-button').on('click', function() {
+  //$('#read-button').css('color','#F05A28');
+  $('#read-button').toggleClass('read notread')
+})
+
+
+// $('#read-button-button').on('click'),function(){
+// }

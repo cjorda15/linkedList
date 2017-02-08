@@ -7,6 +7,7 @@ body {
   overflow: auto;
   margin: 0px auto;
   height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main {
@@ -88,6 +89,14 @@ article{
   float: left;
   position: relative;
   top: 10px;
+}
+
+.read {
+  color: #F05A28;
+}
+
+.notread {
+  color: inherit;
 }
 
 #delete-button{
