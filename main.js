@@ -9,19 +9,20 @@ var $list = $('#list')
 
  $enterButton.on('click',function(){
     checkInput();
-    $list.prepend('<article class="card"><p id="web-title">'+$webTitleInput.val()+'</p>'+
-    '<a id="web-url">'+$webUrlInput.val()+'</a>'+
-    '<button id="read-button" class="notread read">Read</button>'+
-    '<button id="delete-button">Delete</button>'
-    +'</article>')
-  })
+    })
 
-function checkInput() {
-  if ($webTitleInput === "" || $webUrlInput === ""){
-    alert('ERROR!!!!!!!!!!');
-  }
+
+  function checkInput() {
+    if ($('#web-title-input').val() == "" || $('#web-url-input').val() == "") {
+      alert('Please enter a website title.');
+    } else {
+      $list.prepend('<article class="card"><p id="web-title">'+$webTitleInput.val()+'</p>'+
+      '<a id="web-url">'+$webUrlInput.val()+'</a>'+
+      '<button id="read-button" class="notread read">Read</button>'+
+      '<button id="delete-button">Delete</button>'
+      +'</article>')
+    }
 }
-
 
 var cards = function(title, url){
   this.$webTitleInput = title;
@@ -39,8 +40,3 @@ $('#list').on('click','#delete-button', function() {
 $('#list').on('click', "#read-button", function() {
   $(this).toggleClass('notread');
 })
-
-
-
-// $('#read-button-button').on('click'),function(){
-// }
