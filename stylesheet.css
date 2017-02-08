@@ -91,6 +91,14 @@ article{
   top: 10px;
 }
 
+.read {
+  color: #F05A28;
+}
+
+.notread {
+  color: inherit;
+}
+
 #delete-button{
   display: block;
   float:right;
