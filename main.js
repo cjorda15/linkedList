@@ -17,7 +17,7 @@ var $list = $('#list')
       alert('Please enter a website title.');
     } else {
       $list.prepend('<article class="card"><p id="web-title">'+$webTitleInput.val()+'</p>'+
-      '<a id="web-url">'+$webUrlInput.val()+'</a>'+
+      '<a href='+$webUrlInput.val()+' id="web-url" target="_blank">'+$webUrlInput.val()+'</a>'+
       '<button id="read-button" class="notread read">Read</button>'+
       '<button id="delete-button">Delete</button>'
       +'</article>')
