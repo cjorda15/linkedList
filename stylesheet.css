@@ -1,43 +1,47 @@
-*{
+* {
   box-sizing: border-box;
 }
 
 body {
   background-color: #CFD8DC;
-  overflow: auto;
-  margin: 0px auto;
-  height: 100vh;
   font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  margin: 0px auto;
+  min-width: 320px;
+  overflow: auto;
 }
 
 main {
-  position: relative;
-  height: 50%;
   background-color: #455A64;
+  height: 50%;
+  position: relative;
+
 }
 
 section {
-  padding: 15px;
-  margin: 0px auto 10px;
   background-color: #CFD8DC;
   height: 100%;
+  margin: 0px auto 10px;
+  padding: 15px;
 }
 
-h1{
-  font-family: 'Open Sans', sans-serif;
-  weight:800;
-  padding: 25px;
-  width:300px;
-  margin:0px auto;
+h1 {
   display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.125em;
+  margin: 0px auto;
+  padding: 25px;
+  weight: 800;
+  width: 300px;
 }
+
 #title {
   color: #FFFFFF;
 }
 
 #enter-button {
-  color: #FFFFFF;
   background-color: #FFC107;
+  color: #FFFFFF;
 }
 
 #enter-button:hover {
@@ -45,131 +49,146 @@ h1{
 }
 
 #web-title-input, #web-url-input{
-  width:90%;
+  border: 1px solid grey;
   display: block;
   font-size: 26px;
   margin: 20px auto;
-  padding:10px;
-  border:1px solid grey;
-}
-#enter-button {
+  padding: 10px;
   width: 90%;
+
+}
+
+#enter-button {
+  border-width: 1px;
   display: block;
   font-size: 20px;
   margin: 20px auto;
-  padding:10px;
-  border-width: 1px;
+  padding: 10px;
+  width: 90%;
+
 }
 
 article {
   /*max-width: 300px;*/
-  width: 95%;
+  background-color: #fff;
+  border: 1px #607D8B solid;
+  margin: 0px auto 10px;
   padding: 15px;
   padding-bottom: 40px;
-  margin: 0px auto 10px;
-  border: 1px #607D8B solid;
-  background-color: #fff;
+  width: 95%;
 }
 
-#web-title{
+#web-title {
   border-bottom: #CFD8DC 1px solid;
-  padding-bottom: 15px;
-  font-weight: 800;
   color: #455A64;
-  overflow: auto;
   font-size: 2em;
+  font-weight: 800;
   margin: auto;
-}
-
-#web-url{
-  text-decoration: underline;
-  border-bottom: #CFD8DC 1px solid;
-  display: block;
-  color:#607D8B;
-  padding-bottom: 15px;
-  padding-top: 15px;
   overflow: auto;
-
+  padding-bottom: 15px;
 }
 
-#web-url:hover{
-  text-decoration: #FFC107 1px solid
+#web-url {
+  border-bottom: #CFD8DC 1px solid;
+  color:#607D8B;
+  display: block;
+  overflow: auto;
+  padding: 15px 0px;
+  text-decoration: solid 1px #CFD8DC;
 }
 
-.orange-hover {
-  text-decoration: solid 3px #FFC107;
+#underline {
+  padding: 0;
+}
+
+#underline:hover {
+  border-bottom: 2px solid #FFC107;
+  padding: 0;
 }
 
 #read-button,
 #delete-button {
-  display: block;
-  position: relative;
-  top: 10px;
+  background-color: #FFF;
   border: none;
-  background-color: #FFFFFF;
+  display: block;
   outline: none;
+  position: relative;
+  padding: 0;
+  top: 10px;
 }
 
-#read-button{
+#read-button {
+  border-bottom: 1px solid #455A64;
   float: left;
+  text-decoration: none;
 }
 
-#delete-button{
-  float:right;
+#read-button:hover {
+  border-bottom: 2px solid #FFC107;
+  text-decoration: none;
+}
+
+#delete-button {
+  border-bottom: 1px solid #455A64;
   color: #607D8B;
-  text-decoration: underline;
+  float:right;
 }
 
 #delete-button:hover {
-  text-decoration-color: #FFC107;
+  border-bottom: 2px solid #FFC107;
 }
 
 .read {
   color: #F05A28;
   text-decoration: none;
+  border-bottom: 0;
 }
 
 .notread {
   color: #607D8B;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
 @media (min-width:730px) {
-  h1{
-    width:100%
-  }
-  article{
-    width: 90%;
-  }
-  img{
-    width:65px;
+  h1 {
+    width: 100%;
   }
 
-  main{
-   float:left;
-   height:100%;
-   width:50%;
+  article {
+    width: 90%;
+  }
+
+  img {
+    width: 65px;
+  }
+
+  main {
+   float: left;
+   height: 100%;
+   width: 50%;
  }
-  section{
-    float:right;
+
+  section {
+    float: right;
     height:100%;
-    width:50%;
+    width: 50%;
   }
-  #main-content{
-    position: relative;
+
+  #main-content {
     top: 25%;
+    position: relative;
   }
-  #title{
+
+  #title {
     font-size: 46px;
+    padding: 0px;
     text-align: center;
     width: 90%;
-    padding:0px;
   }
 
   #enter-button,
   #web-title-input{
-      margin:40px auto;
+      margin: 40px auto;
   }
-
 }
