@@ -146,9 +146,10 @@ article {
     text-decoration: none;
 }
 
+
 #list-count, #read-count {
     color: #fff;
-    margin: 2px;
+    margin: 10px;
     text-align: center;
     padding: 2px;
 }
