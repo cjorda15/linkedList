@@ -62,7 +62,7 @@ h1 {
   border-width: 1px;
   display: block;
   font-size: 20px;
-  margin: 20px auto;
+  margin: 20px auto 0px;
   padding: 10px;
   width: 90%;
 
@@ -149,8 +149,15 @@ article {
   text-decoration: none;
 }
 
+#list-count{
+  color:#fff;
+margin: 2px;
+text-align: center;
+padding: 2px;
+}
 
 @media (min-width:730px) {
+
   h1 {
     width: 100%;
   }
@@ -191,4 +198,9 @@ article {
   #web-title-input{
       margin: 40px auto;
   }
+#list-count{
+  position: relative;
+  top:150px;
+}
+
 }
