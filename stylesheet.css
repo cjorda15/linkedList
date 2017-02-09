@@ -63,7 +63,7 @@ h1{
 
 article {
   /*max-width: 300px;*/
-  width: 80%;
+  width: 95%;
   padding: 15px;
   padding-bottom: 40px;
   margin: 0px auto 10px;
@@ -77,6 +77,8 @@ article {
   font-weight: 800;
   color: #455A64;
   overflow: auto;
+  font-size: 2em;
+  margin: auto;
 }
 
 #web-url{
@@ -85,11 +87,17 @@ article {
   display: block;
   color:#607D8B;
   padding-bottom: 15px;
+  padding-top: 15px;
   overflow: auto;
+
 }
 
 #web-url:hover{
   text-decoration: #FFC107 1px solid
+}
+
+.orange-hover {
+  text-decoration: solid 3px #FFC107;
 }
 
 #read-button,
@@ -99,7 +107,6 @@ article {
   top: 10px;
   border: none;
   background-color: #FFFFFF;
-  text-decoration: underline;
   outline: none;
 }
 
@@ -109,6 +116,12 @@ article {
 
 #delete-button{
   float:right;
+  color: #607D8B;
+  text-decoration: underline;
+}
+
+#delete-button:hover {
+  text-decoration-color: #FFC107;
 }
 
 .read {
@@ -118,6 +131,7 @@ article {
 
 .notread {
   color: #607D8B;
+  text-decoration: underline;
 }
 
 
@@ -126,7 +140,7 @@ article {
     width:100%
   }
   article{
-    width: 80%;
+    width: 90%;
   }
   img{
     width:65px;
