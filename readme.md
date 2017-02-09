@@ -2,18 +2,12 @@
 
 Build the list with HTML, CSS, and JavaScript.
 
-psudocode:
+This list of links will add website titles and links to "cards" that show the information.
 
-two inputs:
-  website-title
-  website-url
-enter button:
-  enter-button
+The user must enter something into both the website title and website url fields or they will get an error.
 
-put the information in an array.
-take the information from the array and display it on "cards" the screen below.
+The links on the cards turn yellow on hover.
 
-count up all the cards
-count up all the read cards and turn the read button red.
-display number of cards
-display number of unread cards
+A card can be marked read and then marked unread again.
+
+The page resets on page load.
