@@ -6,8 +6,9 @@ var $list = $('#list')
 
  $enterButton.on('click',function(){
     checkInput();
-    })
+    listCounter();
 
+    })
 
   function checkInput() {
     if ($('#web-title-input').val() == "" || $('#web-url-input').val() == "") {
@@ -25,6 +26,7 @@ var $list = $('#list')
 //remove a card when delete button is clicked
 $('#list').on('click','#delete-button', function() {
   $(this).parent().remove();
+listCounter();
   })
 
 
@@ -37,3 +39,7 @@ $('#list').on('hover', 'a', function() {
 $('#list').on('click', "#read-button", function() {
   $(this).toggleClass('notread');
 })
+
+function listCounter(){
+  $('#list-counter').html($(".card").length)
+}
