@@ -178,10 +178,10 @@ article {
         position: relative;
     }
     #title {
-        font-size: 46px;
+        font-size: 51px;
         padding: 0px;
         text-align: center;
-        width: 90%;
+        width: 100%;
     }
     #enter-button, #web-title-input {
         margin: 40px auto;
