@@ -18,8 +18,8 @@ var $list = $('#list')
     //  $enterButton.attr(“disabled”, true);
     } else {
     //  $enterButton.attr(“disabled”, false);
-      $list.prepend('<article class="card"><p id="web-title" >'+$webTitleInput.val()+'</p>'+
-      '<a href='+'http://'+$webUrlInput.val()+' id="web-url"  target="_blank"><div id="underline">'+$webUrlInput.val()+'</div></a>'+
+      $list.prepend('<article class="card"><p id="web-title">'+$webTitleInput.val()+'</p>'+
+      '<a name="tit" href='+'http://'+$webUrlInput.val()+' id="web-url"  target="_blank"><div id="underline">'+$webUrlInput.val()+'</div></a>'+
       '<button id="read-button" class="notread read" >Read</button>'+
       '<button id="delete-button">Delete</button>'
       +'</article>')
